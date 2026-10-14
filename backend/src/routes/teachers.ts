@@ -16,7 +16,7 @@ router.get("/teachers", async (_req, res): Promise<void> => {
   const teachers = await db
     .select()
     .from(teachersTable)
-    .orderBy(asc(teachersTable.fullName));
+    .orderBy(asc(teachersTable.lastName), asc(teachersTable.firstName));
   res.json(ListTeachersResponse.parse(teachers));
 });
 
@@ -30,7 +30,8 @@ router.post("/teachers", async (req, res): Promise<void> => {
   const [teacher] = await db
     .insert(teachersTable)
     .values({
-      fullName: parsed.data.fullName,
+      firstName: parsed.data.firstName,
+      lastName: parsed.data.lastName,
       subject: parsed.data.subject,
       email: parsed.data.email ?? null,
       phone: parsed.data.phone ?? null,

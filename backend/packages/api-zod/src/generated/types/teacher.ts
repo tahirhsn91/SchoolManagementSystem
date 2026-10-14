@@ -9,7 +9,8 @@ import type { RecordStatus } from './recordStatus';
 
 export interface Teacher {
   id: number;
-  fullName: string;
+  firstName: string;
+  lastName: string;
   subject: string;
   /** @nullable */
   email: string | null;
