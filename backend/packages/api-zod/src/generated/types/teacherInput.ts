@@ -10,9 +10,14 @@ import type { RecordStatus } from './recordStatus';
 export interface TeacherInput {
   /**
      * @minLength 1
-     * @maxLength 160
+     * @maxLength 80
      */
-  fullName: string;
+  firstName: string;
+  /**
+     * @minLength 1
+     * @maxLength 80
+     */
+  lastName: string;
   /**
      * @minLength 1
      * @maxLength 120

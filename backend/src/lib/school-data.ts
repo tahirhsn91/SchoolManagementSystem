@@ -61,7 +61,7 @@ export async function listClassroomData() {
         roomName: classroomsTable.roomName,
         capacity: classroomsTable.capacity,
         teacherId: classroomsTable.teacherId,
-        teacherName: teachersTable.fullName,
+        teacherName: sql<string | null>`trim(${teachersTable.firstName} || ' ' || ${teachersTable.lastName})`,
         createdAt: classroomsTable.createdAt,
         updatedAt: classroomsTable.updatedAt,
       })
@@ -109,7 +109,7 @@ export async function listTimetableData() {
       classroomName: classroomsTable.name,
       roomName: classroomsTable.roomName,
       teacherId: timetableEntriesTable.teacherId,
-      teacherName: teachersTable.fullName,
+      teacherName: sql<string | null>`trim(${teachersTable.firstName} || ' ' || ${teachersTable.lastName})`,
       createdAt: timetableEntriesTable.createdAt,
       updatedAt: timetableEntriesTable.updatedAt,
     })

@@ -585,7 +585,9 @@ components:
       properties:
         id:
           type: integer
-        fullName:
+        firstName:
+          type: string
+        lastName:
           type: string
         subject:
           type: string
@@ -601,14 +603,18 @@ components:
         updatedAt:
           type: string
           format: date-time
-      required: [id, fullName, subject, email, phone, status, createdAt, updatedAt]
+      required: [id, firstName, lastName, subject, email, phone, status, createdAt, updatedAt]
     TeacherInput:
       type: object
       properties:
-        fullName:
+        firstName:
           type: string
           minLength: 1
-          maxLength: 160
+          maxLength: 80
+        lastName:
+          type: string
+          minLength: 1
+          maxLength: 80
         subject:
           type: string
           minLength: 1
@@ -621,14 +627,18 @@ components:
           maxLength: 40
         status:
           $ref: "#/components/schemas/RecordStatus"
-      required: [fullName, subject]
+      required: [firstName, lastName, subject]
     TeacherUpdate:
       type: object
       properties:
-        fullName:
+        firstName:
           type: string
           minLength: 1
-          maxLength: 160
+          maxLength: 80
+        lastName:
+          type: string
+          minLength: 1
+          maxLength: 80
         subject:
           type: string
           minLength: 1

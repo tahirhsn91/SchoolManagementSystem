@@ -45,7 +45,8 @@ export const GetDashboardResponse = zod.object({
  */
 export const ListTeachersResponseItem = zod.object({
   "id": zod.number().int(),
-  "fullName": zod.string(),
+  "firstName": zod.string(),
+  "lastName": zod.string(),
   "subject": zod.string(),
   "email": zod.string().nullable(),
   "phone": zod.string().nullable(),
@@ -59,7 +60,9 @@ export const ListTeachersResponse = zod.array(ListTeachersResponseItem)
 /**
  * @summary Enroll a teacher
  */
-export const createTeacherBodyFullNameMax = 160;
+export const createTeacherBodyFirstNameMax = 80;
+
+export const createTeacherBodyLastNameMax = 80;
 
 export const createTeacherBodySubjectMax = 120;
 
@@ -68,7 +71,8 @@ export const createTeacherBodyPhoneMax = 40;
 
 
 export const CreateTeacherBody = zod.object({
-  "fullName": zod.string().min(1).max(createTeacherBodyFullNameMax),
+  "firstName": zod.string().min(1).max(createTeacherBodyFirstNameMax),
+  "lastName": zod.string().min(1).max(createTeacherBodyLastNameMax),
   "subject": zod.string().min(1).max(createTeacherBodySubjectMax),
   "email": zod.string().email().nullish(),
   "phone": zod.string().max(createTeacherBodyPhoneMax).nullish(),
@@ -77,7 +81,8 @@ export const CreateTeacherBody = zod.object({
 
 export const CreateTeacherResponse = zod.object({
   "id": zod.number().int(),
-  "fullName": zod.string(),
+  "firstName": zod.string(),
+  "lastName": zod.string(),
   "subject": zod.string(),
   "email": zod.string().nullable(),
   "phone": zod.string().nullable(),
@@ -97,7 +102,9 @@ export const UpdateTeacherParams = zod.object({
   "id": zod.coerce.number().int().min(1)
 })
 
-export const updateTeacherBodyFullNameMax = 160;
+export const updateTeacherBodyFirstNameMax = 80;
+
+export const updateTeacherBodyLastNameMax = 80;
 
 export const updateTeacherBodySubjectMax = 120;
 
@@ -106,7 +113,8 @@ export const updateTeacherBodyPhoneMax = 40;
 
 
 export const UpdateTeacherBody = zod.object({
-  "fullName": zod.string().min(1).max(updateTeacherBodyFullNameMax).optional(),
+  "firstName": zod.string().min(1).max(updateTeacherBodyFirstNameMax).optional(),
+  "lastName": zod.string().min(1).max(updateTeacherBodyLastNameMax).optional(),
   "subject": zod.string().min(1).max(updateTeacherBodySubjectMax).optional(),
   "email": zod.string().email().nullish(),
   "phone": zod.string().max(updateTeacherBodyPhoneMax).nullish(),
@@ -115,7 +123,8 @@ export const UpdateTeacherBody = zod.object({
 
 export const UpdateTeacherResponse = zod.object({
   "id": zod.number().int(),
-  "fullName": zod.string(),
+  "firstName": zod.string(),
+  "lastName": zod.string(),
   "subject": zod.string(),
   "email": zod.string().nullable(),
   "phone": zod.string().nullable(),

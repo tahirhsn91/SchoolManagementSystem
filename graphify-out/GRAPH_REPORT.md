@@ -1,451 +1,456 @@
-# Graph Report - SchoolManagementSystem  (2026-10-13)
+# Graph Report - SchoolManagementSystem  (2026-10-14)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 152 files · ~47,873 words
+- Verdict: corpus is large enough that graph structure adds value.
+- Unclassified: 9 file(s) not represented in the graph (top: (none) 6, .example 1, .conf 1)
 
 ## Summary
-- 1339 nodes · 2474 edges · 79 communities (76 shown, 3 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
+- 1406 nodes · 2526 edges · 83 communities (76 shown, 7 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7c24deee`
+- Built from commit: `d4806f3e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- Community 0
-- Community 1
-- Community 2
-- Community 3
-- Community 4
-- Community 5
-- Community 6
-- Community 7
-- Community 8
-- Community 9
-- Community 10
-- Community 11
-- Community 12
-- Community 13
-- Community 14
-- Community 15
-- Community 16
-- Community 17
-- Community 18
-- Community 19
-- Community 20
-- Community 21
-- Community 22
-- Community 23
-- Community 24
-- Community 25
-- Community 26
-- Community 27
-- Community 28
-- Community 29
-- Community 30
-- Community 31
-- Community 32
-- Community 33
-- Community 34
-- Community 35
-- Community 36
-- Community 37
-- Community 38
-- Community 39
-- Community 40
-- Community 41
-- Community 42
-- Community 43
-- Community 44
-- Community 45
-- Community 46
-- Community 47
-- Community 48
-- Community 49
-- Community 50
-- Community 51
-- Community 52
-- Community 53
-- Community 54
-- Community 55
-- Community 56
-- Community 57
-- Community 58
-- Community 59
-- Community 60
-- Community 61
-- Community 62
-- Community 63
-- Community 64
-- Community 65
-- Community 66
-- Community 67
-- Community 68
-- Community 69
-- Community 70
-- Community 71
-- Community 72
-- Community 73
-- Community 74
-- Community 75
-- Community 76
-- Community 77
-- Community 78
+- api-client-react/src/generated/api.ts
+- cn
+- devDependencies
+- types/index.ts
+- App.tsx
+- api-zod/src/generated/api.ts
+- sidebar.tsx
+- utils.ts
+- ref_drizzle_orm
+- custom-fetch.ts
+- item.tsx
+- FeesPage
+- api.schemas.ts
+- use-toast.ts
+- routes/students.ts
+- pagination.tsx
+- accordion.tsx
+- compilerOptions
+- routes/fees.ts
+- school-data.ts
+- form.tsx
+- frontend/package.json
+- class-variance-authority
+- lucide-react
+- database/package.json
+- AGENTS.md - Your Workspace
+- components.json
+- error-boundary.tsx
+- routes/classrooms.ts
+- package.json
+- select.tsx
+- carousel.tsx
+- field.tsx
+- backend/package.json
+- app.ts
+- routes/teachers.ts
+- api-client-react/package.json
+- chart.tsx
+- 0000_initial.sql
+- dependencies
+- compilerOptions
+- compilerOptions
+- withQueryKey
+- build.mjs
+- devDependencies
+- api-zod/package.json
+- card.tsx
+- drawer.tsx
+- navigation-menu.tsx
+- compilerOptions
+- toggle-group.tsx
+- compilerOptions
+- compilerOptions
+- scripts
+- Cedar Grove School Management
+- SOUL.md - Who You Are
+- scripts
+- Avatar
+- createFee
+- createFeePayment
+- createStudent
+- createTeacher
+- createTimetableEntry
+- getHealthCheckQueryOptions
+- getUpdateClassroomMutationOptions
+- getUpdateFeeMutationOptions
+- getUpdateStudentMutationOptions
+- getUpdateTeacherMutationOptions
+- getUpdateTimetableEntryMutationOptions
+- sonner.tsx
+- tabs.tsx
+- vite.config.ts
+- tsconfig.json
+- REM Sleep
+- USER.md - User Model
+- customFetch
+- docker-entrypoint.sh
+- @radix-ui/react-aspect-ratio
+- @radix-ui/react-collapsible
+- Dream Diary
+- deep/2026-10-14.md
+- light/2026-10-14.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 273 edges
 2. `customFetch()` - 30 edges
 3. `FeesPage()` - 27 edges
 4. `StudentsPage()` - 25 edges
-5. `TeachersPage()` - 23 edges
+5. `TeachersPage()` - 24 edges
 6. `lucide-react` - 23 edges
-7. `compilerOptions` - 23 edges
-8. `ClassroomsPage()` - 22 edges
-9. `TimetablePage()` - 19 edges
-10. `Field()` - 16 edges
+7. `ClassroomsPage()` - 23 edges
+8. `compilerOptions` - 23 edges
+9. `TimetablePage()` - 20 edges
+10. `class-variance-authority` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `AccordionContent` --calls--> `cn()`  [EXTRACTED]
-  frontend/src/components/ui/accordion.tsx → frontend/src/lib/utils.ts
+- `IDENTITY.md - Who Am I?` --references--> `Avatar()`  [INFERRED]
+  IDENTITY.md → frontend/src/App.tsx
 - `AccordionItem` --calls--> `cn()`  [EXTRACTED]
   frontend/src/components/ui/accordion.tsx → frontend/src/lib/utils.ts
 - `AccordionTrigger` --calls--> `cn()`  [EXTRACTED]
   frontend/src/components/ui/accordion.tsx → frontend/src/lib/utils.ts
-- `AlertDescription` --calls--> `cn()`  [EXTRACTED]
-  frontend/src/components/ui/alert.tsx → frontend/src/lib/utils.ts
-- `AlertTitle` --calls--> `cn()`  [EXTRACTED]
-  frontend/src/components/ui/alert.tsx → frontend/src/lib/utils.ts
+- `AccordionContent` --calls--> `cn()`  [EXTRACTED]
+  frontend/src/components/ui/accordion.tsx → frontend/src/lib/utils.ts
+- `AlertDialogHeader()` --calls--> `cn()`  [EXTRACTED]
+  frontend/src/components/ui/alert-dialog.tsx → frontend/src/lib/utils.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (79 total, 3 thin omitted)
+## Communities (83 total, 7 thin omitted)
 
-### Community 0 - "Community 0"
+### Community 0 - "api-client-react/src/generated/api.ts"
 Cohesion: 0.03
-Nodes (71): Awaited, AwaitedInput, CreateClassroomMutationBody, CreateClassroomMutationError, CreateClassroomMutationResult, CreateClassroomMutationVariables, CreateFeeMutationBody, CreateFeeMutationError (+63 more)
+Nodes (72): Awaited, AwaitedInput, createClassroom(), CreateClassroomMutationBody, CreateClassroomMutationError, CreateClassroomMutationResult, CreateClassroomMutationVariables, CreateFeeMutationBody (+64 more)
 
-### Community 1 - "Community 1"
-Cohesion: 0.05
-Nodes (54): ContextMenuCheckboxItem, ContextMenuContent, ContextMenuItem, ContextMenuLabel, ContextMenuRadioItem, ContextMenuSeparator, ContextMenuShortcut(), ContextMenuSubContent (+46 more)
+### Community 1 - "cn"
+Cohesion: 0.06
+Nodes (47): Avatar, AvatarFallback, AvatarImage, ContextMenuCheckboxItem, ContextMenuContent, ContextMenuItem, ContextMenuLabel, ContextMenuRadioItem (+39 more)
 
-### Community 2 - "Community 2"
+### Community 2 - "devDependencies"
 Cohesion: 0.03
 Nodes (61): devDependencies, class-variance-authority, clsx, cmdk, date-fns, embla-carousel-react, framer-motion, @hookform/resolvers (+53 more)
 
-### Community 3 - "Community 3"
+### Community 3 - "types/index.ts"
 Cohesion: 0.06
 Nodes (29): Classroom, ClassroomInput, ClassroomList, ClassroomUpdate, DashboardSummary, ErrorResponse, FeePayment, FeePaymentInput (+21 more)
 
-### Community 4 - "Community 4"
+### Community 4 - "App.tsx"
 Cohesion: 0.04
-Nodes (15): Avatar(), classroomFormSchema, emailValue, feeFormSchema, FieldProps, initials(), navItems, paymentFormSchema (+7 more)
+Nodes (13): classroomFormSchema, emailValue, feeFormSchema, FieldProps, navItems, paymentFormSchema, phoneValue, queryClient (+5 more)
 
-### Community 5 - "Community 5"
+### Community 5 - "api-zod/src/generated/api.ts"
 Cohesion: 0.04
-Nodes (54): createClassroomBodyCapacityMax, createClassroomBodyGradeMax, createClassroomBodyNameMax, createClassroomBodyRoomNameMax, createFeeBodyAmountDueMin, createFeeBodyTermMax, createFeePaymentBodyAmountMin, createFeePaymentBodyNoteMax (+46 more)
+Nodes (56): createClassroomBodyCapacityMax, createClassroomBodyGradeMax, createClassroomBodyNameMax, createClassroomBodyRoomNameMax, createFeeBodyAmountDueMin, createFeeBodyTermMax, createFeePaymentBodyAmountMin, createFeePaymentBodyNoteMax (+48 more)
 
-### Community 6 - "Community 6"
+### Community 6 - "sidebar.tsx"
 Cohesion: 0.07
-Nodes (37): SheetContent, SheetContentProps, SheetDescription, SheetFooter(), SheetHeader(), SheetOverlay, SheetTitle, sheetVariants (+29 more)
+Nodes (36): SheetContent, SheetContentProps, SheetDescription, SheetFooter(), SheetHeader(), SheetOverlay, SheetTitle, sheetVariants (+28 more)
 
-### Community 7 - "Community 7"
+### Community 7 - "utils.ts"
 Cohesion: 0.07
-Nodes (30): Avatar, AvatarFallback, AvatarImage, HoverCardContent, InputGroup(), InputGroupAddon(), inputGroupAddonVariants, InputGroupButton() (+22 more)
+Nodes (31): Checkbox, HoverCardContent, InputGroup(), InputGroupAddon(), inputGroupAddonVariants, InputGroupButton(), inputGroupButtonVariants, InputGroupInput() (+23 more)
 
-### Community 8 - "Community 8"
-Cohesion: 0.11
-Nodes (25): Classroom, classroomsTable, InsertClassroom, insertClassroomSchema, FeePayment, feePaymentsTable, InsertFeePayment, insertFeePaymentSchema (+17 more)
-
-### Community 9 - "Community 9"
+### Community 8 - "ref_drizzle_orm"
 Cohesion: 0.12
-Nodes (29): ApiError, applyBaseUrl(), AuthTokenGetter, BodyType, buildErrorMessage(), customFetch(), CustomFetchOptions, ErrorType (+21 more)
+Nodes (23): Classroom, classroomsTable, InsertClassroom, insertClassroomSchema, FeePayment, InsertFeePayment, insertFeePaymentSchema, FeeRecord (+15 more)
 
-### Community 10 - "Community 10"
-Cohesion: 0.08
-Nodes (27): Breadcrumb, BreadcrumbEllipsis(), BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator(), ButtonGroup() (+19 more)
+### Community 9 - "custom-fetch.ts"
+Cohesion: 0.12
+Nodes (25): ApiError, applyBaseUrl(), AuthTokenGetter, BodyType, buildErrorMessage(), CustomFetchOptions, ErrorType, getMediaType() (+17 more)
 
-### Community 11 - "Community 11"
-Cohesion: 0.21
-Nodes (30): getListClassroomsQueryKey(), getListClassroomsQueryOptions(), getListTimetableEntriesQueryKey(), getListTimetableEntriesQueryOptions(), useListClassrooms(), useListTimetableEntries(), Button(), ClassroomCapacityPreview() (+22 more)
+### Community 10 - "item.tsx"
+Cohesion: 0.10
+Nodes (19): Breadcrumb, BreadcrumbEllipsis(), BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator(), Item() (+11 more)
 
-### Community 12 - "Community 12"
+### Community 11 - "FeesPage"
+Cohesion: 0.28
+Nodes (25): getListClassroomsQueryKey(), getListFeesQueryKey(), getListTimetableEntriesQueryKey(), useListTeachers(), Button(), ClassroomsPage(), date(), FeesPage() (+17 more)
+
+### Community 12 - "api.schemas.ts"
 Cohesion: 0.07
 Nodes (29): Classroom, ClassroomInput, ClassroomList, ClassroomUpdate, DashboardSummary, ErrorResponse, FeePayment, FeePaymentInput (+21 more)
 
-### Community 13 - "Community 13"
+### Community 13 - "use-toast.ts"
 Cohesion: 0.12
 Nodes (25): Toast, ToastAction, ToastActionElement, ToastClose, ToastDescription, ToastProps, ToastTitle, toastVariants (+17 more)
 
-### Community 14 - "Community 14"
-Cohesion: 0.08
-Nodes (16): CreateStudentBody, CreateStudentResponse, HealthCheckResponse, ListStudentsResponse, UpdateStudentBody, UpdateStudentParams, UpdateStudentResponse, toDateOnlyString() (+8 more)
+### Community 14 - "routes/students.ts"
+Cohesion: 0.12
+Nodes (9): CreateStudentBody, CreateStudentResponse, ListStudentsResponse, UpdateStudentBody, UpdateStudentParams, UpdateStudentResponse, getStudentData(), listStudentData() (+1 more)
 
-### Community 15 - "Community 15"
+### Community 15 - "pagination.tsx"
 Cohesion: 0.12
 Nodes (23): AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter(), AlertDialogHeader(), AlertDialogOverlay, AlertDialogTitle (+15 more)
 
-### Community 16 - "Community 16"
-Cohesion: 0.08
-Nodes (19): AccordionContent, AccordionItem, AccordionTrigger, Checkbox, InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot (+11 more)
+### Community 16 - "accordion.tsx"
+Cohesion: 0.40
+Nodes (4): AccordionContent, AccordionItem, AccordionTrigger, @radix-ui/react-accordion
 
-### Community 17 - "Community 17"
+### Community 17 - "compilerOptions"
 Cohesion: 0.08
 Nodes (23): compilerOptions, alwaysStrict, customConditions, incremental, isolatedModules, lib, module, moduleResolution (+15 more)
 
-### Community 18 - "Community 18"
-Cohesion: 0.09
-Nodes (11): CreateFeeBody, CreateFeePaymentBody, CreateFeePaymentParams, CreateFeePaymentResponse, CreateFeeResponse, ListFeePaymentsParams, ListFeePaymentsResponse, ListFeesResponse (+3 more)
+### Community 18 - "routes/fees.ts"
+Cohesion: 0.07
+Nodes (13): CreateFeeBody, CreateFeePaymentBody, CreateFeePaymentParams, CreateFeePaymentResponse, CreateFeeResponse, ListFeePaymentsParams, ListFeePaymentsResponse, ListFeesResponse (+5 more)
 
-### Community 19 - "Community 19"
-Cohesion: 0.13
-Nodes (13): GetDashboardResponse, getFeeData(), getPaymentStatus(), getStudentData(), getTeacherData(), listFeeData(), listFeePaymentData(), listStudentData() (+5 more)
-
-### Community 20 - "Community 20"
-Cohesion: 0.13
-Nodes (21): Field(), FormControl, FormDescription, FormField(), FormFieldContext, FormFieldContextValue, FormItem, FormItemContext (+13 more)
-
-### Community 21 - "Community 21"
+### Community 19 - "school-data.ts"
 Cohesion: 0.10
-Nodes (19): react, zod, name, private, type, version, date-fns, framer-motion (+11 more)
+Nodes (20): CreateTimetableEntryBody, CreateTimetableEntryResponse, GetDashboardResponse, ListTimetableEntriesResponse, UpdateTimetableEntryBody, UpdateTimetableEntryParams, UpdateTimetableEntryResponse, getClassroomTeacherId() (+12 more)
 
-### Community 22 - "Community 22"
-Cohesion: 0.14
-Nodes (15): Alert, AlertDescription, AlertTitle, alertVariants, Badge(), BadgeProps, badgeVariants, ToggleGroup (+7 more)
+### Community 20 - "form.tsx"
+Cohesion: 0.18
+Nodes (17): Field(), FieldLabel(), FormControl, FormDescription, FormField(), FormFieldContext, FormFieldContextValue, FormItem (+9 more)
 
-### Community 23 - "Community 23"
+### Community 21 - "frontend/package.json"
+Cohesion: 0.08
+Nodes (23): react, @tanstack/react-query, @types/node, zod, name, private, type, version (+15 more)
+
+### Community 22 - "class-variance-authority"
 Cohesion: 0.13
-Nodes (16): Command, CommandDialog(), CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator (+8 more)
+Nodes (15): Alert, AlertDescription, AlertTitle, alertVariants, Badge(), BadgeProps, badgeVariants, Empty() (+7 more)
 
-### Community 24 - "Community 24"
-Cohesion: 0.12
-Nodes (12): apiClientReactSrc, apiZodSrc, root, devDependencies, orval, name, private, scripts (+4 more)
+### Community 23 - "lucide-react"
+Cohesion: 0.08
+Nodes (25): Command, CommandDialog(), CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator (+17 more)
 
-### Community 25 - "Community 25"
-Cohesion: 0.13
-Nodes (10): CreateTimetableEntryBody, CreateTimetableEntryResponse, ListTimetableEntriesResponse, UpdateTimetableEntryBody, UpdateTimetableEntryParams, UpdateTimetableEntryResponse, getClassroomTeacherId(), getTimetableData() (+2 more)
+### Community 24 - "database/package.json"
+Cohesion: 0.05
+Nodes (37): apiClientReactSrc, apiZodSrc, root, devDependencies, orval, name, private, scripts (+29 more)
 
-### Community 26 - "Community 26"
+### Community 25 - "AGENTS.md - Your Workspace"
+Cohesion: 0.09
+Nodes (21): AGENTS.md - Your Workspace, Automations - Be Proactive, Existing Solutions Preflight, External vs Internal, First Run, Graphify - check the map first, Group Chats, Know When to Speak (+13 more)
+
+### Community 26 - "components.json"
 Cohesion: 0.12
 Nodes (16): aliases, components, hooks, lib, ui, utils, rsc, $schema (+8 more)
 
-### Community 27 - "Community 27"
+### Community 27 - "error-boundary.tsx"
 Cohesion: 0.15
 Nodes (8): App(), Router(), ErrorBoundary, ErrorBoundaryProps, ErrorBoundaryState, ErrorFallbackProps, toError(), react-dom
 
-### Community 28 - "Community 28"
+### Community 28 - "routes/classrooms.ts"
 Cohesion: 0.13
 Nodes (8): CreateClassroomBody, CreateClassroomResponse, ListClassroomsResponse, UpdateClassroomBody, UpdateClassroomParams, UpdateClassroomResponse, getClassroomData(), listClassroomData()
 
-### Community 29 - "Community 29"
+### Community 29 - "package.json"
 Cohesion: 0.12
 Nodes (15): devDependencies, prettier, typescript, license, name, packageManager, private, scripts (+7 more)
 
-### Community 30 - "Community 30"
-Cohesion: 0.13
-Nodes (14): drizzle-orm, @types/node, devDependencies, drizzle-kit, @types/node, @types/pg, exports, ./schema (+6 more)
+### Community 30 - "select.tsx"
+Cohesion: 0.28
+Nodes (8): SelectContent, SelectItem, SelectLabel, SelectScrollDownButton, SelectScrollUpButton, SelectSeparator, SelectTrigger, @radix-ui/react-select
 
-### Community 31 - "Community 31"
+### Community 31 - "carousel.tsx"
 Cohesion: 0.17
 Nodes (14): Carousel, CarouselApi, CarouselContent, CarouselContext, CarouselContextProps, CarouselItem, CarouselNext, CarouselOptions (+6 more)
 
-### Community 32 - "Community 32"
+### Community 32 - "field.tsx"
+Cohesion: 0.13
+Nodes (17): ButtonGroup(), ButtonGroupSeparator(), ButtonGroupText(), buttonGroupVariants, Field(), FieldContent(), FieldDescription(), FieldError() (+9 more)
+
+### Community 33 - "backend/package.json"
+Cohesion: 0.13
+Nodes (14): drizzle-orm, @types/node, name, private, type, version, cookie-parser, pino-pretty (+6 more)
+
+### Community 34 - "app.ts"
+Cohesion: 0.18
+Nodes (8): app, port, logger, router, cors, pino, pino-http, @sentry/node
+
+### Community 35 - "routes/teachers.ts"
+Cohesion: 0.09
+Nodes (15): CreateTeacherBody, CreateTeacherResponse, HealthCheckResponse, ListTeachersResponse, UpdateTeacherBody, UpdateTeacherParams, UpdateTeacherResponse, router (+7 more)
+
+### Community 36 - "api-client-react/package.json"
 Cohesion: 0.17
-Nodes (13): Field(), FieldContent(), FieldDescription(), FieldError(), FieldGroup(), FieldLabel(), FieldLegend(), FieldSet() (+5 more)
+Nodes (11): dependencies, @tanstack/react-query, exports, react, @tanstack/react-query, name, peerDependencies, react (+3 more)
 
-### Community 33 - "Community 33"
-Cohesion: 0.14
-Nodes (13): name, private, type, version, cookie-parser, pino, pino-pretty, thread-stream (+5 more)
-
-### Community 34 - "Community 34"
-Cohesion: 0.20
-Nodes (7): app, port, logger, router, cors, pino-http, @sentry/node
-
-### Community 35 - "Community 35"
-Cohesion: 0.15
-Nodes (6): CreateTeacherBody, CreateTeacherResponse, ListTeachersResponse, UpdateTeacherBody, UpdateTeacherParams, UpdateTeacherResponse
-
-### Community 36 - "Community 36"
-Cohesion: 0.17
-Nodes (11): @tanstack/react-query, dependencies, @tanstack/react-query, exports, react, name, peerDependencies, react (+3 more)
-
-### Community 37 - "Community 37"
+### Community 37 - "chart.tsx"
 Cohesion: 0.24
 Nodes (11): ChartConfig, ChartContainer, ChartContext, ChartContextProps, ChartLegendContent, ChartStyle(), ChartTooltipContent, getPayloadConfigFromPayload() (+3 more)
 
-### Community 38 - "Community 38"
+### Community 38 - "0000_initial.sql"
 Cohesion: 0.22
 Nodes (6): "classrooms", "fee_payments", "fee_records", "students", "teachers", "timetable_entries"
 
-### Community 39 - "Community 39"
+### Community 39 - "dependencies"
 Cohesion: 0.20
 Nodes (10): dependencies, cookie-parser, cors, drizzle-orm, express, pino, pino-http, @sentry/node (+2 more)
 
-### Community 40 - "Community 40"
-Cohesion: 0.20
-Nodes (9): compilerOptions, incremental, outDir, rootDir, tsBuildInfoFile, types, extends, include (+1 more)
+### Community 40 - "compilerOptions"
+Cohesion: 0.18
+Nodes (10): compilerOptions, incremental, outDir, rootDir, tsBuildInfoFile, types, extends, include (+2 more)
 
-### Community 41 - "Community 41"
-Cohesion: 0.20
-Nodes (9): compilerOptions, composite, declarationMap, emitDeclarationOnly, outDir, rootDir, types, extends (+1 more)
+### Community 41 - "compilerOptions"
+Cohesion: 0.18
+Nodes (10): compilerOptions, composite, declarationMap, emitDeclarationOnly, outDir, rootDir, types, extends (+2 more)
 
-### Community 42 - "Community 42"
-Cohesion: 0.20
-Nodes (10): getListFeesQueryKey(), getListFeesQueryOptions(), getListStudentsQueryKey(), getListStudentsQueryOptions(), useGetDashboard(), useListFeePayments(), useListFees(), useListStudents() (+2 more)
+### Community 42 - "withQueryKey"
+Cohesion: 0.12
+Nodes (18): getListClassroomsQueryOptions(), getListFeePaymentsQueryKey(), getListFeePaymentsQueryOptions(), getListFeesQueryOptions(), getListStudentsQueryKey(), getListStudentsQueryOptions(), getListTimetableEntriesQueryOptions(), useGetDashboard() (+10 more)
 
-### Community 43 - "Community 43"
+### Community 43 - "build.mjs"
 Cohesion: 0.22
 Nodes (3): artifactDir, esbuild, esbuild-plugin-pino
 
-### Community 44 - "Community 44"
+### Community 44 - "devDependencies"
 Cohesion: 0.22
 Nodes (9): devDependencies, esbuild, esbuild-plugin-pino, pino-pretty, thread-stream, @types/cookie-parser, @types/cors, @types/express (+1 more)
 
-### Community 45 - "Community 45"
+### Community 45 - "api-zod/package.json"
 Cohesion: 0.22
 Nodes (8): dependencies, zod, exports, zod, name, private, type, version
 
-### Community 46 - "Community 46"
+### Community 46 - "card.tsx"
 Cohesion: 0.33
 Nodes (7): Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, NotFound()
 
-### Community 47 - "Community 47"
+### Community 47 - "drawer.tsx"
 Cohesion: 0.25
 Nodes (7): DrawerContent, DrawerDescription, DrawerFooter(), DrawerHeader(), DrawerOverlay, DrawerTitle, vaul
 
-### Community 48 - "Community 48"
+### Community 48 - "navigation-menu.tsx"
 Cohesion: 0.28
 Nodes (8): NavigationMenu, NavigationMenuContent, NavigationMenuIndicator, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle, NavigationMenuViewport, @radix-ui/react-navigation-menu
 
-### Community 49 - "Community 49"
-Cohesion: 0.22
-Nodes (9): compilerOptions, allowImportingTsExtensions, jsx, lib, moduleResolution, noEmit, paths, resolveJsonModule (+1 more)
+### Community 49 - "compilerOptions"
+Cohesion: 0.13
+Nodes (14): compilerOptions, allowImportingTsExtensions, jsx, lib, moduleResolution, noEmit, paths, resolveJsonModule (+6 more)
 
-### Community 50 - "Community 50"
-Cohesion: 0.29
-Nodes (5): extends, include, extends, include, ./tsconfig.base.json
+### Community 50 - "toggle-group.tsx"
+Cohesion: 0.31
+Nodes (7): ToggleGroup, ToggleGroupContext, ToggleGroupItem, Toggle, toggleVariants, @radix-ui/react-toggle, @radix-ui/react-toggle-group
 
-### Community 51 - "Community 51"
-Cohesion: 0.29
-Nodes (7): compilerOptions, composite, declarationMap, emitDeclarationOnly, lib, outDir, rootDir
+### Community 51 - "compilerOptions"
+Cohesion: 0.18
+Nodes (10): compilerOptions, composite, declarationMap, emitDeclarationOnly, lib, outDir, rootDir, extends (+2 more)
 
-### Community 52 - "Community 52"
-Cohesion: 0.33
-Nodes (6): compilerOptions, composite, declarationMap, emitDeclarationOnly, outDir, rootDir
+### Community 52 - "compilerOptions"
+Cohesion: 0.20
+Nodes (9): compilerOptions, composite, declarationMap, emitDeclarationOnly, outDir, rootDir, extends, include (+1 more)
 
-### Community 53 - "Community 53"
+### Community 53 - "scripts"
 Cohesion: 0.40
 Nodes (5): scripts, build, dev, start, typecheck
 
-### Community 54 - "Community 54"
-Cohesion: 0.40
-Nodes (5): dependencies, drizzle-orm, drizzle-zod, pg, zod
+### Community 54 - "Cedar Grove School Management"
+Cohesion: 0.29
+Nodes (6): Cedar Grove School Management, Docker (recommended), Local development (pnpm), Other commands, Project layout, Stack
 
-### Community 55 - "Community 55"
-Cohesion: 0.40
-Nodes (5): scripts, generate, migrate, push, push-force
+### Community 55 - "SOUL.md - Who You Are"
+Cohesion: 0.29
+Nodes (6): Boundaries, Continuity, Core Truths, Related, SOUL.md - Who You Are, Vibe
 
-### Community 56 - "Community 56"
+### Community 56 - "scripts"
 Cohesion: 0.40
 Nodes (5): scripts, build, dev, serve, typecheck
 
-### Community 57 - "Community 57"
+### Community 57 - "Avatar"
 Cohesion: 0.40
-Nodes (5): createClassroom(), getCreateClassroomMutationKey(), getCreateClassroomMutationOptions(), getCreateClassroomUrl(), useCreateClassroom()
+Nodes (4): Avatar(), initials(), IDENTITY.md - Who Am I?, Related
 
-### Community 58 - "Community 58"
+### Community 58 - "createFee"
 Cohesion: 0.40
 Nodes (5): createFee(), getCreateFeeMutationKey(), getCreateFeeMutationOptions(), getCreateFeeUrl(), useCreateFee()
 
-### Community 59 - "Community 59"
+### Community 59 - "createFeePayment"
 Cohesion: 0.40
 Nodes (5): createFeePayment(), getCreateFeePaymentMutationKey(), getCreateFeePaymentMutationOptions(), getCreateFeePaymentUrl(), useCreateFeePayment()
 
-### Community 60 - "Community 60"
+### Community 60 - "createStudent"
 Cohesion: 0.40
 Nodes (5): createStudent(), getCreateStudentMutationKey(), getCreateStudentMutationOptions(), getCreateStudentUrl(), useCreateStudent()
 
-### Community 61 - "Community 61"
+### Community 61 - "createTeacher"
 Cohesion: 0.40
 Nodes (5): createTeacher(), getCreateTeacherMutationKey(), getCreateTeacherMutationOptions(), getCreateTeacherUrl(), useCreateTeacher()
 
-### Community 62 - "Community 62"
+### Community 62 - "createTimetableEntry"
 Cohesion: 0.40
 Nodes (5): createTimetableEntry(), getCreateTimetableEntryMutationKey(), getCreateTimetableEntryMutationOptions(), getCreateTimetableEntryUrl(), useCreateTimetableEntry()
 
-### Community 63 - "Community 63"
+### Community 63 - "getHealthCheckQueryOptions"
 Cohesion: 0.40
 Nodes (5): getHealthCheckQueryKey(), getHealthCheckQueryOptions(), getHealthCheckUrl(), healthCheck(), useHealthCheck()
 
-### Community 64 - "Community 64"
+### Community 64 - "getUpdateClassroomMutationOptions"
 Cohesion: 0.40
 Nodes (5): getUpdateClassroomMutationKey(), getUpdateClassroomMutationOptions(), getUpdateClassroomUrl(), updateClassroom(), useUpdateClassroom()
 
-### Community 65 - "Community 65"
+### Community 65 - "getUpdateFeeMutationOptions"
 Cohesion: 0.40
 Nodes (5): getUpdateFeeMutationKey(), getUpdateFeeMutationOptions(), getUpdateFeeUrl(), updateFee(), useUpdateFee()
 
-### Community 66 - "Community 66"
+### Community 66 - "getUpdateStudentMutationOptions"
 Cohesion: 0.40
 Nodes (5): getUpdateStudentMutationKey(), getUpdateStudentMutationOptions(), getUpdateStudentUrl(), updateStudent(), useUpdateStudent()
 
-### Community 67 - "Community 67"
+### Community 67 - "getUpdateTeacherMutationOptions"
 Cohesion: 0.40
 Nodes (5): getUpdateTeacherMutationKey(), getUpdateTeacherMutationOptions(), getUpdateTeacherUrl(), updateTeacher(), useUpdateTeacher()
 
-### Community 68 - "Community 68"
+### Community 68 - "getUpdateTimetableEntryMutationOptions"
 Cohesion: 0.40
 Nodes (5): getUpdateTimetableEntryMutationKey(), getUpdateTimetableEntryMutationOptions(), getUpdateTimetableEntryUrl(), updateTimetableEntry(), useUpdateTimetableEntry()
 
-### Community 69 - "Community 69"
+### Community 69 - "sonner.tsx"
 Cohesion: 0.40
 Nodes (3): ToasterProps, next-themes, sonner
 
-### Community 70 - "Community 70"
+### Community 70 - "tabs.tsx"
 Cohesion: 0.40
-Nodes (4): exclude, extends, include, references
+Nodes (4): TabsContent, TabsList, TabsTrigger, @radix-ui/react-tabs
 
-### Community 71 - "Community 71"
+### Community 71 - "vite.config.ts"
 Cohesion: 0.40
 Nodes (4): port, @tailwindcss/vite, vite, @vitejs/plugin-react
 
-### Community 72 - "Community 72"
-Cohesion: 0.40
-Nodes (4): compileOnSave, extends, files, references
+### Community 72 - "tsconfig.json"
+Cohesion: 0.33
+Nodes (5): compileOnSave, extends, files, ./tsconfig.base.json, references
 
-### Community 73 - "Community 73"
+### Community 73 - "REM Sleep"
 Cohesion: 0.50
-Nodes (4): getDashboard(), getGetDashboardQueryKey(), getGetDashboardQueryOptions(), getGetDashboardUrl()
+Nodes (3): Possible Lasting Truths, Reflections, REM Sleep
 
-### Community 74 - "Community 74"
+### Community 74 - "USER.md - User Model"
 Cohesion: 0.50
-Nodes (4): getListFeePaymentsQueryKey(), getListFeePaymentsQueryOptions(), getListFeePaymentsUrl(), listFeePayments()
+Nodes (3): Directives, Related, USER.md - User Model
 
-### Community 75 - "Community 75"
-Cohesion: 0.50
-Nodes (4): getListTeachersQueryKey(), getListTeachersQueryOptions(), getListTeachersUrl(), listTeachers()
+### Community 75 - "customFetch"
+Cohesion: 0.12
+Nodes (18): customFetch(), isRequest(), mergeHeaders(), resolveMethod(), getListClassroomsUrl(), getListFeePaymentsUrl(), getListFeesUrl(), getListStudentsUrl() (+10 more)
 
 ## Knowledge Gaps
-- **25 isolated node(s):** `react`, `zod`, `date-fns`, `framer-motion`, `react-icons` (+20 more)
-  These have ≤1 connection - possible missing edges. (Counts symbols only; 568 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **38 isolated node(s):** `@workspace/api-zod`, `@workspace/db`, `cookie-parser`, `drizzle-orm`, `@types/cookie-parser` (+33 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 626 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `Community 1` to `Community 32`, `Community 37`, `Community 6`, `Community 7`, `Community 10`, `Community 13`, `Community 46`, `Community 15`, `Community 16`, `Community 47`, `Community 48`, `Community 20`, `Community 22`, `Community 23`, `Community 31`?**
-  _High betweenness centrality (0.206) - this node is a cross-community bridge._
-- **What connects `react`, `zod`, `date-fns` to the rest of the system?**
-  _25 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.029342723004694836 - nodes in this community are weakly interconnected._
-- **Why does `@types/node` connect `Community 30` to `Community 33`, `Community 21`?**
-  _High betweenness centrality (0.087) - this node is a cross-community bridge._
-- **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.05314685314685315 - nodes in this community are weakly interconnected._
-- **Why does `devDependencies` connect `Community 2` to `Community 21`?**
-  _High betweenness centrality (0.085) - this node is a cross-community bridge._
-- **Should `Community 2` be split into smaller, more focused modules?**
+- **Why does `cn()` connect `cn` to `field.tsx`, `chart.tsx`, `sidebar.tsx`, `utils.ts`, `tabs.tsx`, `item.tsx`, `use-toast.ts`, `card.tsx`, `pagination.tsx`, `accordion.tsx`, `drawer.tsx`, `navigation-menu.tsx`, `toggle-group.tsx`, `form.tsx`, `class-variance-authority`, `lucide-react`, `select.tsx`, `carousel.tsx`?**
+  _High betweenness centrality (0.167) - this node is a cross-community bridge._
+- **What connects `@workspace/api-zod`, `@workspace/db`, `cookie-parser` to the rest of the system?**
+  _38 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `api-client-react/src/generated/api.ts` be split into smaller, more focused modules?**
+  _Cohesion score 0.030060882800608826 - nodes in this community are weakly interconnected._
+- **Why does `devDependencies` connect `devDependencies` to `frontend/package.json`?**
+  _High betweenness centrality (0.070) - this node is a cross-community bridge._
+- **Should `cn` be split into smaller, more focused modules?**
+  _Cohesion score 0.05989110707803993 - nodes in this community are weakly interconnected._
+- **Why does `lucide-react` connect `lucide-react` to `cn`, `App.tsx`, `sidebar.tsx`, `utils.ts`, `item.tsx`, `use-toast.ts`, `card.tsx`, `pagination.tsx`, `accordion.tsx`, `navigation-menu.tsx`, `frontend/package.json`, `select.tsx`, `carousel.tsx`?**
+  _High betweenness centrality (0.063) - this node is a cross-community bridge._
+- **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.03278688524590164 - nodes in this community are weakly interconnected._

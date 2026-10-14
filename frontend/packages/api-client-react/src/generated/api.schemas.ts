@@ -23,7 +23,8 @@ export const RecordStatus = {
 
 export interface Teacher {
   id: number;
-  fullName: string;
+  firstName: string;
+  lastName: string;
   subject: string;
   /** @nullable */
   email: string | null;
@@ -37,9 +38,14 @@ export interface Teacher {
 export interface TeacherInput {
   /**
      * @minLength 1
-     * @maxLength 160
+     * @maxLength 80
      */
-  fullName: string;
+  firstName: string;
+  /**
+     * @minLength 1
+     * @maxLength 80
+     */
+  lastName: string;
   /**
      * @minLength 1
      * @maxLength 120
@@ -58,9 +64,14 @@ export interface TeacherInput {
 export interface TeacherUpdate {
   /**
      * @minLength 1
-     * @maxLength 160
+     * @maxLength 80
      */
-  fullName?: string;
+  firstName?: string;
+  /**
+     * @minLength 1
+     * @maxLength 80
+     */
+  lastName?: string;
   /**
      * @minLength 1
      * @maxLength 120

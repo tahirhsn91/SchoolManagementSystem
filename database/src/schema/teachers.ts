@@ -4,7 +4,8 @@ import { z } from "zod/v4";
 
 export const teachersTable = pgTable("teachers", {
   id: serial("id").primaryKey(),
-  fullName: text("full_name").notNull(),
+  firstName: text("first_name").notNull(),
+  lastName: text("last_name").notNull(),
   subject: text("subject").notNull(),
   email: text("email"),
   phone: text("phone"),
